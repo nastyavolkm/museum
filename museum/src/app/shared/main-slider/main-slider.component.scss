@@ -1,0 +1,10 @@
+@import '../../../sass/abstracts/variables';
+@import '../../../sass/abstracts/mixins';
+
+:host {
+    @include flex(center);
+}
+
+img {
+    -webkit-box-shadow:inset 15px 0 25px 25px #0F0F0F;
+    box-shadow:inset 15px 0 25px 25px #0F0F0F;}

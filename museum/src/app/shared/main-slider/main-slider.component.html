@@ -1,0 +1,10 @@
+<swiper
+    [pagination]="{
+      type: 'fraction'
+    }"
+    [navigation]="true"
+    class="mySwiper"
+  >
+    <ng-template *ngFor="let image of images" swiperSlide><img class="mySwiper__img" alt ="image" src={{image}}></ng-template
+    >
+  </swiper>

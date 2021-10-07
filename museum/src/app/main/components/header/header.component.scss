@@ -1,0 +1,45 @@
+@import '../../../../sass/abstracts/variables';
+@import '../../../../sass/abstracts/mixins';
+
+:host {
+    @include flex(center);
+    background-color: $bg-main-color;
+    padding: $padding-wrapper;
+    color: $font-color;
+}
+
+.header {
+    @include flex-space-between();
+    width: 100%;
+    &__logo-wrapper {
+        @include flex(flex-start);
+        gap: 10px;
+    }
+    &__logo {
+        width: 50px;
+        height: auto;
+    }
+    &__name {
+        font-family: $main-font;
+        font-size: 28px;
+        letter-spacing: 5px;
+    }
+    &__nav {
+        font-family: $submain-font;
+        font-size: 22px;
+        &-list {
+            @include flex(center);
+            gap: 10px;
+        }
+        
+        &-item {
+            list-style-type: none;
+            letter-spacing: 2px;
+            font-style: normal;
+            font-weight: 200;
+            &:hover {
+                background-color: lighten($color: $bg-main-color, $amount: 50%);
+            }
+        }
+    }
+}
